@@ -1,237 +1,210 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link href="estilos.css" rel="stylesheet">
-    <title>Pinterest</title>
-</head>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />
 
-<body>
-    <header>
-        <nav>
-            <a><img src="imagenes/PinteresTs.jpeg" id="pinterest-icon"> </a>
-            <div class="left-items">
-                <ul class="first-list">
-                    <li><a href="#" id="inicio">Inicio</a></li>
-                    <li><a href="#" id="explorar">Explorar</a></li>
-                    <li><a href="#" id="crear">Crear</a></li>
-                </ul>
-            </div>
-            <!--Barra de busquedad -->
-            <div class="search">
-                <div class="barra">
-                    <div><span class="material-symbols-outlined" id="lupa"> search </span></div>
-                    <input type="text" placeholder="Buscar"> </input>
-                </div>
-            </div>
-            <!--Iconos de la derecha-->
-            <div class="right-items">
-                <span class="material-symbols-outlined"> notifications</span>
-                <span class="material-symbols-outlined">sms</span>
-                <span class="material-symbols-outlined">account_circle</span>
-                <span class="material-symbols-outlined"> expand_more</span>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
 
-            </div>
-            <div>
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Portafolio | Brenda</title>
+  </head>
 
-            </div>
-        </nav>
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Brenda Lucero Valverde Morales</h1>
+        <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+    
+    <p> </p>
 
-    </header>
-    <main class="contenido">
-        <div class="imagenes">
-            <div class="card-image">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/fotodeperfil.jpeg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">Acerca de mi</h2>
+        <p class="bio-text">
+            "El que no arriesga no gana, por que como sabras que lo lograras si nunca lo intentaste"
+            Ingeniero en Tecnologías de la información, apasionada de las actividades en equipo,
+            me defino por ser una persona con ganas de seguir aprendiendo, me gusta el diseño web, la programación.
+           
+        </p>
+      </div>
+    </section>
 
-                <div class="card-image">
-                    <img src="imagenes/imagen1.jpg" alt="img2" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
+    <!-- More about -->
+    <section class="more-about">
+      <h2>Mas acerca de mi </h2>
+      <p>
+        Mi  nimbre es Brenda Lucero egresada de la Ingeniera de Tecnologías de la informacion,
+         con la edad de 22 años apacionada por seguir aprendiendo nuevas cosas,
+        desde pequeña me a gustado la tecnologia soñando que estudiaria una carrera en tecnologia 
+        actualmente lo logre y lo que puedo decir es si no te pones una meta en la vida 
+        como sabes donde forjar tu fururo
+      </p>
+      <p>
+        Me encanta seguir aprendiendo, me encanta la tecnologia
+      </p>
+     
+    </section>
 
-                <div class="card-image">
-                    <img src="imagenes/imagen2.jpg" alt="img2" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">Mis principales habilidades</h2>
 
-                <div class="card-image">
-                    <img src="imagenes/imagen3.jpg" alt="img3" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen4.jpg" alt="img4" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen5.jpg" alt="img5" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen6.jpg" alt="imagen6" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen7.jpg" alt="img7" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen8.jpg" alt="img8" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen9.jpg" alt="img9" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen10.jpg" alt="img10" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen11.jpg" alt="img11" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen12.jpg" alt="img12" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen13.jpg" alt="img13" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen14.jpg" alt="img14" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen15.jpg" alt="img15" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen16.jpg" alt="img16" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen17.jpg" alt="img17" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen18.jpg" alt="img18" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen19.jpg" alt="img19" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen20.jpg" alt="img20" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen21.jpg" alt="img21" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen22.jpg" alt="img22" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen23.jpg" alt="img23" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen24.jpg" alt="img24" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen25.jpg" alt="img25" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen26.jpg" alt="img26" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen27.jpg" alt="imgg27" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen28.jpg" alt="img28" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen29.jpg" alt="img29" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
-                <div class="card-image">
-                    <img src="imagenes/imagen30.jpg" alt="img30" class="img">
-                    <button class="button"><a href="#">Guardar</a></button>
-                    <sanp class="material-symbols-outlined oculto-1">upload</sanp>
-                    <sanp class="material-symbols-outlined oculto-2">more_horiz</sanp>
-                </div>
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icon1.jpg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
 
-            </div>
-    </main>
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/h1.jfif"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Proyectos </h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/pantalla.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Pinterest copia</h3>
+          <p class="project-details">
+            Inspirada en Pinterest, con una navegacion facil y accesible.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+       
+       
+      </div>
+    </section>
 
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.instagram.com/brendamorales9070/profilecard/?igsh=MTV2aXNsYm83OXNzbA==" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/brenda-lucero-valverde-morales-4319881ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/brenda1731" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="#" target="_blank"
+          >Brenda Lucero Valverde </a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
